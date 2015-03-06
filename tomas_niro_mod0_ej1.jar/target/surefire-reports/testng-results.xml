@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.globant.training.tomas_niro.Tests" duration-ms="44958" started-at="2015-03-04T17:29:50Z" finished-at="2015-03-04T17:30:35Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="44958" started-at="2015-03-04T17:29:50Z" finished-at="2015-03-04T17:30:35Z">
+      <class name="com.globant.training.tomas_niro.Tests">
+        <test-method status="PASS" signature="before()" name="before" is-config="true" duration-ms="15417" started-at="2015-03-04T17:29:50Z" finished-at="2015-03-04T17:30:06Z">
+        </test-method>
+        <test-method status="PASS" signature="testForm()" name="testForm" duration-ms="9041" started-at="2015-03-04T17:30:06Z" description="Case4" finished-at="2015-03-04T17:30:15Z">
+        </test-method>
+        <test-method status="PASS" signature="after()" name="after" is-config="true" duration-ms="814" started-at="2015-03-04T17:30:15Z" finished-at="2015-03-04T17:30:15Z">
+        </test-method>
+        <test-method status="PASS" signature="before()" name="before" is-config="true" duration-ms="10372" started-at="2015-03-04T17:30:15Z" finished-at="2015-03-04T17:30:26Z">
+        </test-method>
+        <test-method status="FAIL" signature="testForm2()" name="testForm2" duration-ms="8521" started-at="2015-03-04T17:30:26Z" description="Case 5: Fill some fields of ContactUs form page then correct it and verify" finished-at="2015-03-04T17:30:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Please make corrections below and try again.
+Name: *
+Email Address: *
+A valid email address is required.
+Subject: *
+Message: *
+its working? expected:<null> but was:<[[FirefoxDriver: firefox on WINDOWS (6138128c-ac3c-406e-a03b-f704b034952d)] -> id: cntctfrm_contact_form]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Please make corrections below and try again.
+Name: *
+Email Address: *
+A valid email address is required.
+Subject: *
+Message: *
+its working? expected:<null> but was:<[[FirefoxDriver: firefox on WINDOWS (6138128c-ac3c-406e-a03b-f704b034952d)] -> id: cntctfrm_contact_form]>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotSame(Assert.java:485)
+	at org.testng.Assert.assertNull(Assert.java:421)
+	at com.globant.training.tomas_niro.Tests.testForm2(Tests.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="after()" name="after" is-config="true" duration-ms="763" started-at="2015-03-04T17:30:34Z" finished-at="2015-03-04T17:30:35Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="GLB-D3004" name="com.globant.training.tomas_niro.Tests" tests="2" failures="1" timestamp="4 Mar 2015 20:30:35 GMT" time="44.958" errors="0">
+  <testcase name="testForm" time="9.041" classname="com.globant.training.tomas_niro.Tests"/>
+  <testcase name="testForm2" time="8.521" classname="com.globant.training.tomas_niro.Tests">
+    <failure type="java.lang.AssertionError" message="Please make corrections below and try again.
+Name: *
+Email Address: *
+A valid email address is required.
+Subject: *
+Message: *
+its working? expected:&amp;lt;null&amp;gt; but was:&amp;lt;[[FirefoxDriver: firefox on WINDOWS (6138128c-ac3c-406e-a03b-f704b034952d)] -&amp;gt; id: cntctfrm_contact_form]&amp;gt;">
+      <![CDATA[java.lang.AssertionError: Please make corrections below and try again.
+Name: *
+Email Address: *
+A valid email address is required.
+Subject: *
+Message: *
+its working? expected:<null> but was:<[[FirefoxDriver: firefox on WINDOWS (6138128c-ac3c-406e-a03b-f704b034952d)] -> id: cntctfrm_contact_form]>
+	at com.globant.training.tomas_niro.Tests.testForm2(Tests.java:115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 29 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

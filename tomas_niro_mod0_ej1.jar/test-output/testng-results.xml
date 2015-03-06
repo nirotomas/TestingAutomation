@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25597" started-at="2015-03-05T14:00:08Z" finished-at="2015-03-05T14:00:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25597" started-at="2015-03-05T14:00:08Z" finished-at="2015-03-05T14:00:33Z">
+      <class name="com.globant.training.tomas_niro.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tomas_niro.Tests@2a18f23c]" name="before" is-config="true" duration-ms="16715" started-at="2015-03-05T11:00:08Z" finished-at="2015-03-05T11:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="calendar()[pri:0, instance:com.globant.training.tomas_niro.Tests@2a18f23c]" name="calendar" duration-ms="8210" started-at="2015-03-05T11:00:24Z" description="Case 6" finished-at="2015-03-05T11:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calendar -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tomas_niro.Tests@2a18f23c]" name="after" is-config="true" duration-ms="654" started-at="2015-03-05T11:00:33Z" finished-at="2015-03-05T11:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tomas_niro.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

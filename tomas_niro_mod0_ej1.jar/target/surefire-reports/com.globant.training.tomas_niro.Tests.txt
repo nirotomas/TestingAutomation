@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.globant.training.tomas_niro.Tests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.941 sec <<< FAILURE!
+testForm2(com.globant.training.tomas_niro.Tests)  Time elapsed: 8.522 sec  <<< FAILURE!
+java.lang.AssertionError: Please make corrections below and try again.
+Name: *
+Email Address: *
+A valid email address is required.
+Subject: *
+Message: *
+its working? expected:<null> but was:<[[FirefoxDriver: firefox on WINDOWS (6138128c-ac3c-406e-a03b-f704b034952d)] -> id: cntctfrm_contact_form]>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotSame(Assert.java:485)
+	at org.testng.Assert.assertNull(Assert.java:421)
+	at com.globant.training.tomas_niro.Tests.testForm2(Tests.java:115)
+
