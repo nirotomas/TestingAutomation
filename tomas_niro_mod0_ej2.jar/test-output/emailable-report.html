@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">1</td><td class="num">568.829</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tomas_niro.training.globant.com.tests.Tests</td><td><a href="#m0">case4</a></td><td rowspan="1">1426560264314</td><td rowspan="1">12373</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">tomas_niro.training.globant.com.tests.Tests</td><td><a href="#m1">case6</a></td><td rowspan="1">1426560286882</td><td rowspan="1">10669</td></tr><tr class="passedeven"><td><a href="#m2">case7</a></td><td rowspan="1">1426560305066</td><td rowspan="1">94829</td></tr><tr class="passedeven"><td><a href="#m3">case8</a></td><td rowspan="1">1426560408459</td><td rowspan="1">104582</td></tr><tr class="passedeven"><td><a href="#m4">case9</a></td><td rowspan="1">1426560546383</td><td rowspan="1">106897</td></tr><tr class="passedeven"><td><a href="#m5">testFlight</a></td><td rowspan="1">1426560661342</td><td rowspan="1">95156</td></tr><tr class="passedeven"><td><a href="#m6">testLogin</a></td><td rowspan="1">1426560764565</td><td rowspan="1">9884</td></tr><tr class="passedeven"><td><a href="#m7">testLoginPsswFail</a></td><td rowspan="1">1426560782805</td><td rowspan="1">13209</td></tr><tr class="passedeven"><td><a href="#m8">testLoginUserFail</a></td><td rowspan="1">1426560806034</td><td rowspan="1">13769</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">tomas_niro.training.globant.com.tests.Tests#case4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;preMain&quot;}
+Command duration or timeout: 1.56 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Tomas-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 03f63ed7-673f-4da1-a9e1-2194ef8d378f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=34.0.5}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at tomas_niro.training.globant.com.pages.Logg.signedOut(Logg.java:30)
+	at tomas_niro.training.globant.com.tests.Tests.case4(Tests.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;preMain&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Tomas-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Tomas/AppData/Local/Temp/anonymous5386892648331347201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Tomas/AppData/Local/Temp/anonymous5386892648331347201webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Tomas/AppData/Local/Temp/anonymous5386892648331347201webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Tomas/AppData/Local/Temp/anonymous5386892648331347201webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Tomas/AppData/Local/Temp/anonymous5386892648331347201webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">tomas_niro.training.globant.com.tests.Tests#case6</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">tomas_niro.training.globant.com.tests.Tests#case7</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">tomas_niro.training.globant.com.tests.Tests#case8</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">tomas_niro.training.globant.com.tests.Tests#case9</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">tomas_niro.training.globant.com.tests.Tests#testFlight</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">tomas_niro.training.globant.com.tests.Tests#testLogin</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">tomas_niro.training.globant.com.tests.Tests#testLoginPsswFail</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">tomas_niro.training.globant.com.tests.Tests#testLoginUserFail</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
