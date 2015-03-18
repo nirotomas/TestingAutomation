@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suit 1]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="Run on IExplorer(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="tomas_niro.training.globant.com.tests.Tests">
+        <methods>
+          <include name="before"/>
+          <include name="case9"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- tomas_niro.training.globant.com.tests.Tests -->
+    </classes>
+  </test> <!-- Run on IExplorer(failed) -->
+</suite> <!-- Failed suite [suit 1] -->
