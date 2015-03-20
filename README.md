@@ -29,5 +29,7 @@ Optional: Practico2_mod1:
   
   java -jar selenium-server-standalone-2.45.0.jar -role hub -port 4441
 
+ Conclution: The DOM in diferent browsers changes, so no all the test cases works.I I think, if you want all the test cases   to work youll have to program one code for each browser. Couldn't sol this problem
+ 
 Plataform: Eclipse-Maven-Selenium-TestNG-FireBug-Firepath
            Optional: Grid Server
