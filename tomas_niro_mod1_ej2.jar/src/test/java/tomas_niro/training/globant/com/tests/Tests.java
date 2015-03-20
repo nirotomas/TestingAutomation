@@ -59,6 +59,11 @@ public class Tests {
 		driver.get("http://www.cheaptickets.com/");
 		Reporter.log("Se Entro a la Pagina Correctamente\n");
 	}
+//	@BeforeMethod
+//	public void before() {
+//		driver = new FirefoxDriver();
+//		homePage.goHome(driver);
+//	}
 
 	@AfterMethod
 	public void after() {

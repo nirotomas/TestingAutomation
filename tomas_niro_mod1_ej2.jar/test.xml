@@ -11,27 +11,26 @@
 <!-- </test> -->
 
 
-<test name = "Run on Chrome">
-<parameter name = "browser" value="CH"></parameter>
-<classes>
-<class name="tomas_niro.training.globant.com.tests.Tests"></class>
-</classes>
-<methods>
-  <include name="case8"></include>
-  </methods>
-</test>
+<!-- <test name = "Run on Chrome"> -->
+<!-- <parameter name = "browser" value="CH"></parameter> -->
+<!-- <classes> -->
+<!-- <class name="tomas_niro.training.globant.com.tests.Tests"></class> -->
+<!-- </classes> -->
+<!-- <methods> -->
+<!--   <include name="case8"></include> -->
+<!--   </methods> -->
+<!-- </test> -->
 
 
-<test name = "Run on IExplorer">
-<parameter name = "browser" value="IE"></parameter>
-<classes>
-<class name="tomas_niro.training.globant.com.tests.Tests"></class>
-</classes>
-<methods>
-  <include name="case8"></include>
-  </methods>
-</test>
-
+<!-- <test name = "Run on IExplorer"> -->
+<!-- <parameter name = "browser" value="IE"></parameter> -->
+<!-- <classes> -->
+<!-- <class name="tomas_niro.training.globant.com.tests.Tests"></class> -->
+<!-- </classes> -->
+<!-- <methods> -->
+<!--   <include name="case8"></include> -->
+<!--   </methods> -->
+<!-- </test> -->
 
 <test name = "Run on Firefox4">
 <parameter name = "browser" value="FF"></parameter>
@@ -39,7 +38,7 @@
 <class name="tomas_niro.training.globant.com.tests.Tests"></class>
 </classes>
 <methods>
-  <include name="case8"></include>
+  <include name="testLoginPsswFail"></include>
   </methods>
 </test>
 

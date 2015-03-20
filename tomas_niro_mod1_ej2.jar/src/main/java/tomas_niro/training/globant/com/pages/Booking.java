@@ -18,9 +18,12 @@ public class Booking {
 	
 		Assert.assertEquals(driver.findElement(By.className("contentText")).findElement(By.tagName("strong")).getText(), "Spirit Airlines");
 		Assert.assertEquals(driver.findElement(By.className("inlineTerm")).findElement(By.tagName("dd")).getText(), "Wed, Mar 25, 2015");
-		Assert.assertEquals(returnDate.getText(), "Thu, Mar 26, 2015");
+		Assert.assertEquals(driver.findElement(By.className("inlineTerm")).findElements(By.tagName("dd")).get(1).getText(), "Thu, Mar 26, 2015");
+		//Assert.assertEquals(driver.findElement(By.id("preMain")).findElement(By.tagName("h1")).getText()," Los Angeles Trip Details:          Flight  ");
+		//Assert.assertEquals(returnDate.getText(), "Thu, Mar 26, 2015");
 		Assert.assertEquals(driver.findElement(By.className("flightOriginDestination")).getText(), "Las Vegas (LAS) > Los Angeles (LAX)");
-		Assert.assertEquals(to_from.getText(), "Los Angeles (LAX) > Las Vegas (LAS)");
+		//Assert.assertEquals(to_from.getText(), "Los Angeles (LAX) > Las Vegas (LAS)");
+		Assert.assertEquals(driver.findElements(By.className("flightOriginDestination")).get(1).getText(), "Los Angeles (LAX) > Las Vegas (LAS)");
 	
 	}
 	

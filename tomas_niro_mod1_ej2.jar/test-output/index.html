@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-suit_1">
-              <span class="suite-name border-failed">suit 1</span>
+              <span class="suite-name border-passed">suit 1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-suit_1">
-                    <span>C:\Users\tomas.niro\TAE\Workspace\tomas_niro_mod0_ej2.jar\test.xml</span>
+                    <span>C:\Users\tomas.niro\TAE\Workspace\tomas_niro_mod1_ej2.jar\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-suit_1" class="hide-methods failed suite-suit_1"> (hide)</a> <!-- hide-methods failed suite-suit_1 -->
-                      <a href="#" panel-name="suite-suit_1" class="show-methods failed suite-suit_1"> (show)</a> <!-- show-methods failed suite-suit_1 -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suit_1" class="hide-methods passed suite-suit_1"> (hide)</a> <!-- hide-methods passed suite-suit_1 -->
+                      <a href="#" panel-name="suite-suit_1" class="show-methods passed suite-suit_1"> (show)</a> <!-- show-methods passed suite-suit_1 -->
                     </span>
-                    <div class="method-list-content failed suite-suit_1">
+                    <div class="method-list-content passed suite-suit_1">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="tomas_niro.training.globant.com.tests.Tests" hash-for-method="case9">case9</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="tomas_niro.training.globant.com.tests.Tests" hash-for-method="testLoginPsswFail">testLoginPsswFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-suit_1 -->
+                    </div> <!-- method-list-content passed suite-suit_1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,114 +116,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-suit_1" class="panel suit_1">
-          <div class="suite-suit_1-class-failed">
+          <div class="suite-suit_1-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tomas_niro.training.globant.com.tests.Tests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="case9">
-                  </a> <!-- case9 -->
-                  <span class="method-name">case9</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == div.IM_right_column.IM_show_price (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 370 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
-System info: host: &apos;GLB-D3004&apos;, ip: &apos;10.60.11.41&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15680/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1cc1f234-d582-4606-b874-890e861645e3
-*** Element info: {Using=css selector, value=div.IM_right_column.IM_show_price}
-Command duration or timeout: 2.27 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;GLB-D3004&apos;, ip: &apos;10.60.11.41&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, webdriver.remote.sessionid=88458d3c-0cee-48bb-a530-de8882adac48, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15680/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 88458d3c-0cee-48bb-a530-de8882adac48
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
-	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:236)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
-	at tomas_niro.training.globant.com.pages.Flights.hotel_flight_rsts(Flights.java:63)
-	at tomas_niro.training.globant.com.tests.Tests.case9(Tests.java:158)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;GLB-D3004&apos;, ip: &apos;10.60.11.41&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == div.IM_right_column.IM_show_price (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 370 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
-System info: host: &apos;GLB-D3004&apos;, ip: &apos;10.60.11.41&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15680/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 1cc1f234-d582-4606-b874-890e861645e3
-*** Element info: {Using=css selector, value=div.IM_right_column.IM_show_price}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;GLB-D3004&apos;, ip: &apos;10.60.11.41&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
-	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:236)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
-	at com.sun.proxy.$Proxy2.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.findElement(EventFiringWebDriver.java:402)
-	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
-	at com.sun.proxy.$Proxy3.findElement(Unknown Source)
-	at org.openqa.selenium.remote.server.handler.FindChildElement.call(FindChildElement.java:43)
-	at org.openqa.selenium.remote.server.handler.FindChildElement.call(FindChildElement.java:1)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testLoginPsswFail">
+                  </a> <!-- testLoginPsswFail -->
+                  <span class="method-name">testLoginPsswFail</span>
                   <em>
-(case9)                  </em>
+(case3)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-suit_1-class-failed -->
+          </div> <!-- suite-suit_1-class-passed -->
         </div> <!-- panel suit_1 -->
         <div panel-name="test-xml-suit_1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\tomas.niro\TAE\Workspace\tomas_niro_mod0_ej2.jar\test.xml</span>
+            <span class="header-content">C:\Users\tomas.niro\TAE\Workspace\tomas_niro_mod1_ej2.jar\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;suit 1&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test name=&quot;Run on IExplorer&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;IE&quot;/&gt;
+  &lt;test name=&quot;Run on Firefox4&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FF&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tomas_niro.training.globant.com.tests.Tests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;case9&quot;/&gt;
+          &lt;include name=&quot;testLoginPsswFail&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tomas_niro.training.globant.com.tests.Tests --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on IExplorer --&gt;
+  &lt;/test&gt; &lt;!-- Run on Firefox4 --&gt;
 &lt;/suite&gt; &lt;!-- suit 1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,7 +164,7 @@ Driver info: driver.version: RemoteWebDriver
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on IExplorer (1 class)</span>
+                <span class="test-name">Run on Firefox4 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'case9')
+data.setCell(0, 1, 'testLoginPsswFail')
 data.setCell(0, 2, 'tomas_niro.training.globant.com.tests.Tests')
-data.setCell(0, 3, 148873);
+data.setCell(0, 3, 26569);
 window.suiteTableData['suit_1']= { tableData: data, tableDiv: 'times-div-suit_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-suit_1">
               </div> <!-- times-div-suit_1 -->
             </div> <!-- times-div -->
@@ -285,9 +214,30 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-suit_1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tomas_niro.training.globant.com.tests.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">case4</span>
+                <br/>
+                <span class="ignored-method-name">testLoginUserFail</span>
+                <br/>
+                <span class="ignored-method-name">testFlight</span>
+                <br/>
+                <span class="ignored-method-name">case7</span>
+                <br/>
+                <span class="ignored-method-name">case8</span>
+                <br/>
+                <span class="ignored-method-name">case6</span>
+                <br/>
+                <span class="ignored-method-name">case9</span>
+                <br/>
+                <span class="ignored-method-name">testLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-suit_1" class="panel">
@@ -298,18 +248,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tomas_niro.training.globant.com.tests.Tests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">before(IE)</span>
+                <span class="method-name">before(FF)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">case9</span>
-                <span class="method-start">16872 ms</span>
+                <span class="method-name">testLoginPsswFail</span>
+                <span class="method-start">19627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">165776 ms</span>
+                <span class="method-start">46196 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,7 +5,9 @@
     <classes>
       <class name="tomas_niro.training.globant.com.tests.Tests">
         <methods>
-          <include name="testFlight"/>
+          <include name="before"/>
+          <include name="testLoginPsswFail"/>
+          <include name="after"/>
         </methods>
       </class> <!-- tomas_niro.training.globant.com.tests.Tests -->
     </classes>
