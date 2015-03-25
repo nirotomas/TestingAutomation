@@ -32,7 +32,7 @@ public class Tests {
 	WebDriver driver;
 	HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 
-	@BeforeMethod
+	/*@BeforeMethod
 	@Parameters("browser")
 	public void before(String browser) throws MalformedURLException {
 		System.out.println(browser);
@@ -58,12 +58,12 @@ public class Tests {
 		}
 		driver.get("http://www.cheaptickets.com/");
 		Reporter.log("Se Entro a la Pagina Correctamente\n");
+	}*/
+	@BeforeMethod
+	public void before() {
+		driver = new FirefoxDriver();
+		homePage.goHome(driver);
 	}
-//	@BeforeMethod
-//	public void before() {
-//		driver = new FirefoxDriver();
-//		homePage.goHome(driver);
-//	}
 
 	@AfterMethod
 	public void after() {
@@ -72,12 +72,12 @@ public class Tests {
 	}
 
 	  @Test(description = "case1")
-	  public void testLogin() throws InterruptedException { 
+	  public void case1() throws InterruptedException { 
 		  loggIn(); 
 	  }
 	  	
 	  @Test(description = "case2")
-	  public void testLoginUserFail() throws InterruptedException
+	  public void case2() throws InterruptedException
 	  {
 		  String usr = "primer_test1";
 		  Logg logg = homePage.goLogin(driver);
@@ -88,7 +88,7 @@ public class Tests {
 	  }
 	  
 	  @Test(description = "case3")
-	  public void testLoginPsswFail() throws InterruptedException { 
+	  public void case3() throws InterruptedException { 
 		  String usr = "primer_test1";
 		  Logg logg = homePage.goLogin(driver);
 		  logg.go(driver);
@@ -111,7 +111,7 @@ public class Tests {
 	  }
 
 	@Test(description = "case5")
-	public void testFlight() throws InterruptedException {
+	public void case5() throws InterruptedException {
 		selectFlight(false);
 	}
 
@@ -123,7 +123,7 @@ public class Tests {
 		flight.inputFromTo(driver,
 				"Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)",
 				"Los Angeles, California - Los Angeles Airport, El Segundo (LAX)");
-		flight.pickDate(driver,"03/15/15","03/10/15");
+		flight.pickDate(driver,"03/15/2015","03/10/2015");
 		flight.submit(driver);
 		pausa(5);
 		Assert.assertEquals(driver.findElement(By.id("main")).findElement(By.id("search")).findElement(By.className("airFormMod ")).findElement(By.cssSelector("div.airSearchForm.searchForm ")).findElement(By.className("searchFormForm ")).findElement(By.tagName("fieldset")).findElement(By.tagName("p")).getText(), "That date/time has already passed. Please select a new date/time.");
@@ -142,7 +142,6 @@ public class Tests {
 		selectFlight(true);
 	  
 	}
-	
 
 	@Test(description="case9")
 	public void case9() throws InterruptedException{
@@ -156,7 +155,7 @@ public class Tests {
 		pausa(10);
 		
 		//filling search fields
-		flight.flight_hotel(driver,"03/25/15","03/26/15","Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)", "Los Angeles Airport, El Segundo, Los Angeles, CA, United States");
+		flight.flight_hotel(driver,"03/29/15","03/30/15","Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)", "Los Angeles Airport, El Segundo, Los Angeles, CA, United States");
 		pausa(20);
 		
 		//verify and select flight+hotel results
@@ -216,7 +215,7 @@ public class Tests {
 				"Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)",
 				"Los Angeles, California - Los Angeles Airport, El Segundo (LAX)");
 
-		flight.pickDate(driver,"03/25/15","03/26/15");
+		flight.pickDate(driver,"03/29/15","03/30/15");
 		flight.submit(driver);
 		try {
 
@@ -231,7 +230,7 @@ public class Tests {
 			//sort by price
 			rsts.sortByPrice(driver);
 
-			pausa(10);
+			pausa(5);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
 			//select first match

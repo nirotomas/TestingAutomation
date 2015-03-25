@@ -47,7 +47,7 @@ public class Flights {
 		//sortBy ReviewerScore
 		driver.findElement(By.className("pkgResultsSort")).
 		findElement(By.className("bidirectionalSort")).
-		findElement(By.tagName("div")).findElement(By.tagName("div")).click();
+		findElement(By.cssSelector("div.links.dropDown")).findElement(By.tagName("div")).click();
 		driver.findElement(By.className("content")).
 		findElement(By.tagName("ul")).
 		findElements(By.tagName("li")).
@@ -61,10 +61,9 @@ public class Flights {
 		Thread.sleep(20 * 1000);
 
 		//Select First Result
-		driver.findElement(By.className("pkgResultsMod ")).findElement(By.className("IM_is_hotel_list_page")).
-		findElement(By.cssSelector("div.IM_ad_unit.IM_oww_ssn_hidensity.IM_clearfix.IM_oww_ssn_hidensity_hires.IM_package_pricing_page")).
-		findElement(By.cssSelector("div.IM_right_column.IM_show_price")).
-		findElement(By.className("IM_ssn_button_red")).findElement(By.tagName("a")).click();
+		driver.findElement(By.id("main")).findElement(By.className("pkgResultsMod ")).
+		findElement(By.cssSelector("div.pkgResultsCard.pkgResultsHotelCard")).
+		findElement(By.cssSelector("a.buttonLink.link")).click();
 		
 		//select first Flight result
 		Thread.sleep(15 * 1000);

@@ -1,12 +1,12 @@
-<suite name ="suit 1" verbose="1" parallel="tests" thread-count="5">
+<!-- <suite name ="suit 1" verbose="1" parallel="tests" thread-count="5"> -->
 
 <!-- <test name = "Run on Firefox"> -->
 <!-- <parameter name = "browser" value="FF"></parameter> -->
 <!-- <classes> -->
-<!-- <class name="com.globant.training.tomas_niro.Tests"></class> -->
+<!-- <class name="tomas_niro.training.globant.com.tests.Tests"></class> -->
 <!-- </classes> -->
 <!-- <methods> -->
-<!--   <include name="calendar"></include> -->
+<!--   <include name="case9"></include> -->
 <!--   </methods> -->
 <!-- </test> -->
 
@@ -32,14 +32,14 @@
 <!--   </methods> -->
 <!-- </test> -->
 
-<test name = "Run on Firefox4">
-<parameter name = "browser" value="FF"></parameter>
-<classes>
-<class name="tomas_niro.training.globant.com.tests.Tests"></class>
-</classes>
-<methods>
-  <include name="testLoginPsswFail"></include>
-  </methods>
-</test>
+<!-- <test name = "Run on Firefox4"> -->
+<!-- <parameter name = "browser" value="FF"></parameter> -->
+<!-- <classes> -->
+<!-- <class name="tomas_niro.training.globant.com.tests.Tests"></class> -->
+<!-- </classes> -->
+<!-- <methods> -->
+<!--   <include name="case9"></include> -->
+<!--   </methods> -->
+<!-- </test> -->
 
 </suite>

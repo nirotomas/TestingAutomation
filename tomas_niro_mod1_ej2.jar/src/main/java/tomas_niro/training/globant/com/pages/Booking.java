@@ -7,22 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
 public class Booking {
-
-	@FindBy(xpath="html/body/div[7]/div[2]/div/form/div[2]/div/div/div[3]/div[2]/div[1]/div/div[1]/dl/dd[2]")
-	private WebElement returnDate;
-	
-	@FindBy(xpath="html/body/div[7]/div[2]/div/form/div[2]/div/div/div[3]/div[2]/div[1]/div/div[3]")
-	private WebElement to_from;
 	
 	public void verifyTripDetail(WebDriver driver){
-	
-		Assert.assertEquals(driver.findElement(By.className("contentText")).findElement(By.tagName("strong")).getText(), "Spirit Airlines");
-		Assert.assertEquals(driver.findElement(By.className("inlineTerm")).findElement(By.tagName("dd")).getText(), "Wed, Mar 25, 2015");
-		Assert.assertEquals(driver.findElement(By.className("inlineTerm")).findElements(By.tagName("dd")).get(1).getText(), "Thu, Mar 26, 2015");
-		//Assert.assertEquals(driver.findElement(By.id("preMain")).findElement(By.tagName("h1")).getText()," Los Angeles Trip Details:          Flight  ");
-		//Assert.assertEquals(returnDate.getText(), "Thu, Mar 26, 2015");
+		
+		Assert.assertEquals(driver.findElement(By.id("preMain")).getText(),"Los Angeles Trip Details: Flight");
+		Assert.assertEquals(driver.getTitle(), "www.cheaptickets.com - Trip details");
+		Assert.assertEquals(driver.findElement(By.cssSelector("div.heading.withLink")).getText(), "Trip Information");
 		Assert.assertEquals(driver.findElement(By.className("flightOriginDestination")).getText(), "Las Vegas (LAS) > Los Angeles (LAX)");
-		//Assert.assertEquals(to_from.getText(), "Los Angeles (LAX) > Las Vegas (LAS)");
 		Assert.assertEquals(driver.findElements(By.className("flightOriginDestination")).get(1).getText(), "Los Angeles (LAX) > Las Vegas (LAS)");
 	
 	}
