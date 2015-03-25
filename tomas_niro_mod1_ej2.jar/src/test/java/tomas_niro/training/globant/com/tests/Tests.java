@@ -107,7 +107,7 @@ public class Tests {
 	  	pausa(5);
 	  	logg.signOut(driver);
 	  	pausa(5);
-	  	Assert.assertEquals(logg.signedOut(driver), "You are now signed out");
+	  	Assert.assertEquals(driver.getCurrentUrl(), "https://www.cheaptickets.com/account/logout");
 	  }
 
 	@Test(description = "case5")
@@ -126,7 +126,13 @@ public class Tests {
 		flight.pickDate(driver,"03/15/2015","03/10/2015");
 		flight.submit(driver);
 		pausa(5);
-		Assert.assertEquals(driver.findElement(By.id("main")).findElement(By.id("search")).findElement(By.className("airFormMod ")).findElement(By.cssSelector("div.airSearchForm.searchForm ")).findElement(By.className("searchFormForm ")).findElement(By.tagName("fieldset")).findElement(By.tagName("p")).getText(), "That date/time has already passed. Please select a new date/time.");
+		Assert.assertEquals(driver.findElement(By.id("contentContainer")).findElement(By.id("content")).
+							findElement(By.id("main")).findElement(By.id("search")).
+							findElement(By.className("airFormMod ")).
+							findElement(By.cssSelector("div.airSearchForm.searchForm ")).
+							findElement(By.className("searchFormForm ")).findElement(By.tagName("fieldset")).
+							findElement(By.tagName("p")).getText(),
+							"That date/time has already passed. Please select a new date/time.");
 	}
 	
 	@Test(description="case7 - Definir y automatizar un test positivo dentro del "
@@ -262,7 +268,7 @@ public class Tests {
 			pausa(5);
 			
 			traveler.continuar(driver,logged);
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 			} catch (InterruptedException e) {
 				e.printStackTrace();
