@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19528" started-at="2015-05-10T23:15:39Z" finished-at="2015-05-10T23:15:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19528" started-at="2015-05-10T23:15:39Z" finished-at="2015-05-10T23:15:58Z">
+      <class name="com.globant.carnival.Tests.Tests">
+        <test-method status="PASS" signature="TC2()[pri:0, instance:com.globant.carnival.Tests.Tests@f03893]" name="TC2" duration-ms="19512" started-at="2015-05-10T20:15:39Z" finished-at="2015-05-10T20:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+      </class> <!-- com.globant.carnival.Tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

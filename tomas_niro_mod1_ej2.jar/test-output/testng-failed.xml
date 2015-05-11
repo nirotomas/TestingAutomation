@@ -5,7 +5,7 @@
     <classes>
       <class name="tomas_niro.training.globant.com.tests.Tests">
         <methods>
-          <include name="case4"/>
+          <include name="case2"/>
           <include name="before"/>
           <include name="after"/>
         </methods>

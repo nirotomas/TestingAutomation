@@ -161,7 +161,7 @@ public class Tests {
 		pausa(10);
 		
 		//filling search fields
-		flight.flight_hotel(driver,"03/29/15","03/30/15","Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)", "Los Angeles Airport, El Segundo, Los Angeles, CA, United States");
+		flight.flight_hotel(driver,"04/29/15","04/30/15","Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)", "Los Angeles Airport, El Segundo, Los Angeles, CA, United States");
 		pausa(20);
 		
 		//verify and select flight+hotel results
@@ -221,7 +221,7 @@ public class Tests {
 				"Las Vegas, Nevada - Las Vegas McCarran Intl Airport (LAS)",
 				"Los Angeles, California - Los Angeles Airport, El Segundo (LAX)");
 
-		flight.pickDate(driver,"03/29/15","03/30/15");
+		flight.pickDate(driver,"04/29/15","04/30/15");
 		flight.submit(driver);
 		try {
 
